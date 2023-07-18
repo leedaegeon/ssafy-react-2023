@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   gap: 60px;
-  
+
   --primary-color: #1b1a19;
   --secondary-color: #f7f3ed;
   --square-size: 80px;
@@ -18,7 +18,7 @@
   font-size: 20px;
 }
 
-.Squares {
+.SquareList {
   --board-size: calc(var(--square-size) * 3);
   width: var(--board-size);
   height: var(--board-size);
@@ -53,7 +53,6 @@
   flex-flow: column;
   gap: 8px;
 }
-
 
 .History li {
   list-style-type: decimal-leading-zero;
