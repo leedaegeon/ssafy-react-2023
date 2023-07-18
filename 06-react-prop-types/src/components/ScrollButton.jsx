@@ -1,13 +1,13 @@
-import './ScrollButton.css';
+import "../styles/ScrollButton.css";
 
-function ScrollButton({ mode = 'down' }) {
-  const isDown = mode === 'down';
-  const buttonLabel = `스크롤 ${isDown ? '다운' : '업'}`;
+function ScrollButton({ mode = "down" }) {
+  const isDown = mode === "down";
+  const buttonLabel = `스크롤 ${isDown ? "다운" : "업"}`;
 
   return (
     <button
       type="button"
-      className={isDown ? 'scrollDown' : 'scrollUp'}
+      className={isDown ? "scrollDown" : "scrollUp"}
       aria-label={buttonLabel}
       title={buttonLabel}
     >

@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "scripts": {
     "dev": "pnpm watch | pnpm serve",
     "serve": "live-server --host=localhost --port=3000 --no-browser",
@@ -9,6 +8,6 @@
   "devDependencies": {
     "live-server": "1.2.2",
     "ts-node": "10.9.1",
-    "typescript": "5.1.6"
+    "typescript": "^5.1.6"
   }
 }

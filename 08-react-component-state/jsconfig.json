@@ -1,0 +1,10 @@
+// 절대 경로를 설정했을 때 동작하도록 하는 config파일
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

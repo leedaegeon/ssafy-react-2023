@@ -6,6 +6,10 @@
     console.log(Array.isArray(restNumbers));
 
     // const numbers = Array.from(arguments); // 유사 배열 arguments (이터러블 프로토콜 => 이터레이터 프로토콜), for of 문
+
+    // restNumbers.reduce(func, cur)
+    // func: (result, number) => result + number
+    // cur: firstNumber
     return restNumbers.reduce((result, number) => result + number, firstNumber);
   };
 

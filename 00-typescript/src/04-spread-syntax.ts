@@ -4,8 +4,8 @@
 
 {
   function run() {
-    combineArray(); // 배열 합성
-    // combineObject(); // 객체 합성
+    // combineArray(); // 배열 합성
+    combineObject(); // 객체 합성
   }
 
   function combineArray() {
