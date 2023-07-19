@@ -1,20 +1,10 @@
-import classes from '@/styles/Game.module.css';
 import Square from '@/components/Square';
-import { useState } from 'react';
+import { PLAYER1, PLAYER2 } from '@/constants';
+import classes from '@/styles/Game.module.css';
+import { arrayOf, func } from 'prop-types';
 
-function SquareList() {
-  //react component state
-  const [squares, setSquares] = useState(Array(9).fill(null));
 
-  const [gameIndex, setGameIndex] = useState(0);
-
-  // derived states from component states
-  //플레이어 순서 정하고 있었음
-  //   const nextPlayer = gameIndex%2 === 0?
-
-  const handlePlay = (index) => () => {
-    console.log(index);
-  };
+function SquareList({squares, handlePlay}) {
 
   return (
     <div className={classes.SquareList}>
@@ -28,6 +18,11 @@ function SquareList() {
       })}
     </div>
   );
+}
+
+SquareList.propTypes = {
+  squares: arrayOf([null, PLAYER1, PLAYER2]), //null 또는 문자
+  handlePlay: func,
 }
 
 export default SquareList;
