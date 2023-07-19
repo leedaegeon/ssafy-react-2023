@@ -1,7 +1,7 @@
 import Square from '@/components/Square';
 import { PLAYER1, PLAYER2 } from '@/constants';
 import classes from '@/styles/Game.module.css';
-import { arrayOf, func } from 'prop-types';
+import { func, oneOf } from 'prop-types';
 
 
 function SquareList({squares, handlePlay}) {
@@ -21,7 +21,7 @@ function SquareList({squares, handlePlay}) {
 }
 
 SquareList.propTypes = {
-  squares: arrayOf([null, PLAYER1, PLAYER2]), //null 또는 문자
+  squares: oneOf([null, PLAYER1, PLAYER2]), //null 또는 문자
   handlePlay: func,
 }
 
